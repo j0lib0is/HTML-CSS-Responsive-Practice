@@ -1,0 +1,260 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  border: 1px solid grey;
+}
+
+/*Remember to define focus styles!*/
+:focus {
+  outline: 0;
+}
+
+/*General Styles*/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-family: "Source Sans Pro", sans-serif;
+}
+section {
+  padding: 4% 0;
+}
+
+/*Text Styles*/
+h1 {
+  font-family: "Oxygen", sans-serif;
+  color: #fbfffb;
+  font-size: 6rem;
+}
+h2 {
+  font-family: "Oxygen", sans-serif;
+  font-size: 3rem;
+}
+h3 {
+  font-family: "Oxygen", sans-serif;
+  font-size: 2rem;
+}
+h2,
+h3 {
+  color: #266035;
+  text-align: center;
+  margin-bottom: 5%;
+}
+a {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/*Helper Classes*/
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*Button Styles*/
+button {
+  padding: 2% 4%;
+  margin-top: 4%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.hero-content button {
+  background-color: green;
+  color: white;
+  transition: 0.2s;
+}
+.hero-content button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#plants button {
+  background-color: white;
+  color: green;
+}
+
+/*Nav Styles*/
+nav {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 72px;
+  top: 0;
+  z-index: 999; /*Keep on top of everything*/
+}
+.logo {
+  width: 5%;
+}
+.nav-menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav a {
+  height: 100%;
+  color: #266035;
+}
+
+/*Hero Styles*/
+#home {
+  height: 90vh;
+  background-image: url("../images/header.jpg");
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*About Styles*/
+#about {
+  height: 85vh;
+  background-image: url("../images/about-img.jpg");
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#about div {
+  width: 20%;
+  margin-right: 10%;
+}
+
+/*Plant Styles*/
+.plant {
+  display: flex;
+}
+.plant div {
+  width: 50%;
+}
+.plant-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bg-succulants #plants {
+  height: 50vh;
+  background-image: url("../images/succulants.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-cacti #plants {
+  height: 50vh;
+  background-image: url("../images/cacti.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg-tropical #plants {
+  height: 50vh;
+  background-image: url("../images/tropicals.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*Footer Styles*/
+footer {
+  background-color: #266035;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+footer h2 {
+  color: white;
+  width: 100%;
+}
+footer h3 {
+  color: white;
+  text-align: left;
+}
+footer a {
+  color: white;
+}
+footer .flex-container {
+  display: flex;
+}
+footer .contact-info {
+  width: 50%;
+  text-align: left;
+}
+footer img {
+  width: 50%;
+}
+.copyright p {
+  width: 100%;
+  text-align: right;
+  margin-right: 10%;
+}
